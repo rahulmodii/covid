@@ -15,7 +15,7 @@ class App extends React.Component {
     await Axios.get('https://coronavirus-19-api.herokuapp.com/countries/India').then((res)=>this.updatesuccess(res)).catch((err)=>console.log(err))
   }
   updatesuccess = (res) =>{
-    console.log(res.data)
+    // console.log(res.data)
     this.setState({
       cases:res.data.cases,
       death:res.data.deaths,
